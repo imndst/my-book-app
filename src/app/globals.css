@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: 255 255 255;
+  --foreground: 23 23 23;
+
+  --card: 255 255 255;
+  --card-foreground: 23 23 23;
+}
+
+.dark {
+  --background: 15 15 15;
+  --foreground: 240 240 240;
+
+  --card: 18 18 18;
+  --card-foreground: 237 237 237;
+}
+
+/* ⚡️ semantic token mapping */
+@theme inline {
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-card: rgb(var(--card));
+  --color-card-foreground: rgb(var(--card-foreground));
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
