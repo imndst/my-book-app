@@ -17,16 +17,16 @@ export default function Navbar() {
   return (
     <nav className="bg-background border-b border-border px-4 py-3 transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo / Title */}
+     
         <h1 className="text-lg font-bold text-foreground">Imndst</h1>
 
-        {/* Desktop Menu + Theme Toggle */}
+    
         <div className="hidden md:flex gap-4 items-center">
           <Link href="/" className="text-foreground hover:text-primary">Home</Link>
           <Link href="/about" className="text-foreground hover:text-primary">About</Link>
           <Link href="/contact" className="text-foreground hover:text-primary">Contact</Link>
 
-          {/* Theme toggle always visible on desktop */}
+     
           <Button size="sm" variant="ghost" onClick={toggleTheme}>
             {theme === "light" ? "🌞" : "🌙"}
           </Button>
